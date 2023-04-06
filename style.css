@@ -1,0 +1,1612 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: #10101A;
+}
+
+#sidebar{
+    background: #0B0B13;
+    width: 230px;
+    height: 1024px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#sidebar .circle1{
+    background: #2FBF71;
+    width: 280px;
+    height: 290px;
+    border-radius: 100%;
+    position: absolute;
+    top: -165px;
+    left: -45px;
+}
+#sidebar .circle2 img{
+    background: #FEC328;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    z-index: 1;
+}
+#sidebar .circle2 label{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins';
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    z-index: 1;
+}
+#sidebar .items{
+    margin-top: 250px;
+    position: absolute;
+    z-index: 1;
+}
+#sidebar .items hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border: 0.5px solid #10101A;
+}
+#sidebar .items li{
+    color: #fff;
+    font-weight: 900;
+    padding: 10px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    width: 250px;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+#sidebar .items li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    transition: 0.3s ease;
+    margin-left: 40px;
+    
+}
+#sidebar .items li a:hover{
+    color: #ffffff85;
+    transition: 1s;
+}
+#sidebar .items li i{
+    padding-right: 20px;
+    font-size: 15px;
+}
+#sidebar .social-media{
+    position: absolute;
+    top: 600px;
+    left: 50px;
+    z-index: 1;
+}
+#sidebar .social-media li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+
+}
+#sidebar .social-media li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 13px;
+}
+#sidebar .social-media li a i:hover{
+    color: #2FBF71;
+    transition: 0.2s;
+}
+
+/* Home part */
+#home{
+    width: calc(100% - 250px);
+    height: 600px;
+    z-index: 1;
+    margin-left: 250px;
+    position: relative;
+}
+#home .content{
+    position: absolute;
+    top: 130px;
+    left: 40px;
+}
+#home .content .hello{
+    font-size: 24px;
+    font-family: 'Roboto';
+    color: #fff;
+}
+#home .content .myname{
+    font-size: 54px;
+    font-family: 'Poppins', SemiBold;
+    color: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+}
+#home .content .text{
+    position: relative;
+    color: #fff;
+    font-size: 24;
+    font-family: 'Roboto';
+    font-weight: 400;
+    top: 25px;
+}
+#home .content .text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #10101A;
+    border-left: 2px solid #fff;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+#home .content .bio{
+    font-size: 13px;
+    font-family: 'Poppins';
+    color: #fff;
+    margin-top: 55px;
+}
+#home .content .btn{
+    margin-top: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#home .content .btn button{
+    width: 200px;
+    height: 56px;
+    background: #2FBF71;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+#home .content .btn button:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 56px;
+    background-color: #fff;
+    margin-top: -13px;
+    margin-left: -45px;
+    z-index: -1;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+#home .content .btn button:hover{
+    background: #fff;
+    color: #2FBF71;
+    transition: 0.5s;
+}
+#home .content .btn button:hover:before{
+    background: #2FBF71;
+    transition: 0.5s;
+}
+#home .circle3{
+    background: #0B0B13;
+    width: 540px;
+    height: 630px;
+    border-radius: 60rem 0 0 60rem;
+    position: absolute;
+    top: -30px;
+    left: 550px;
+    z-index: 1;
+}
+#home .circle4 img{
+    background: #2FBF71;
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    position: absolute;
+    top: 140px;
+    left: 530px;
+    z-index: 1;
+}
+#home .circle5{
+    border-radius: 100%;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    top: 15px;
+    left: 1180px;
+    cursor: pointer;
+    z-index: 10;
+}
+#home .circle5 i{
+    position: relative;
+    top: 8px;
+    left: 8px;
+    font-size: 25px;
+    z-index: 10;
+}
+
+/* About us */
+#about{
+    width: calc(100% - 250px);
+    height: 630px;
+    z-index: 1;
+    margin-left: 230px;
+    position: relative;
+}
+#about .img{
+    z-index: 1;
+}
+#about .img .img1 img{
+    position: absolute;
+    width: 228px;
+    height: 248px;
+    top: 50px;
+    left: 50px;
+    background: #A9EFE7;
+    border-radius: 15px;
+    
+}
+#about .img .img1:before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 65px;
+    left: 285px;
+    border-radius: 100%;
+    background: #A9EFE7;
+}
+#about .img .img2 img{
+    position: absolute;
+    width: 228px;
+    height: 248px;
+    top: 95px;
+    left: 290px;
+    background: #FEC328;
+    border-radius: 15px;
+}
+#about .img .img3 img{
+    position: absolute;
+    width: 228px;
+    height: 248px;
+    top: 305px;
+    left: 50px;
+    background: #FEC328;
+    border-radius: 15px;
+}
+#about .img .img3:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 290px;
+    left: 24px;
+    border-radius: 100%;
+    background: #FEC328;
+}
+#about .img .img4 img{
+    position: absolute;
+    width: 228px;
+    height: 248px;
+    top: 350px;
+    left: 290px;
+    background: #9A94D6;
+    border-radius: 15px;
+}
+#about .img .img4:before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 560px;
+    left: 270px;
+    border-radius: 100%;
+    background: #A9EFE7;
+}
+#about .content2{
+    position: absolute;
+    left: 550px;
+}
+#about .content2 .head h1{
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+#about .content2 .head:before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    border-radius: 2px;
+    top: 78px;
+    background: #2FBF71;
+}
+#about .content2 .head h1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+#about .content2 .des{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+#about .content2 .des2 {
+    font-family: 'Roboto';
+    font-size: 17px;
+    color: #fff;
+    position: relative;
+    top: 90px;
+}
+#about .content2 .k{
+    position: absolute;
+    top: 380px;
+    color: #fff;
+}
+#about .content2 .k label{
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+#about .content2 .k p{
+    font-size: 15px;
+    font-family: 'Roboto';
+    position: relative;
+    top: -42px;
+    left: 54px;
+}
+#about .content2 .k2 {
+    position: absolute;
+    top: 380px;
+    left: 220px;
+    color: #fff;
+}
+
+#about .content2 .k2 label {
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+#about .content2 .k2 p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    position: relative;
+    top: -42px;
+    left: 54px;
+}
+#about .content2 .btn2 {
+    margin-top: 200px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+#about .content2 .btn2 button {
+    width: 140px;
+    height: 46px;
+    background: #2FBF71;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#about .content2 .btn2 button:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 46px;
+    background-color: #fff;
+    margin-top: -8px;
+    margin-left: -22px;
+    z-index: -1;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+#about .content2 .btn2 button:hover {
+    background: #fff;
+    color: #2FBF71;
+    transition: 0.5s;
+}
+
+#about .content2 .btn2 button:hover:before {
+    background: #2FBF71;
+    transition: 0.5s;
+}
+#about .content2 .btn3 {
+    margin-top: -45px;
+    margin-left: 230px;
+    cursor: pointer;
+}
+
+#about .content2 .btn3 button {
+    width: 140px;
+    height: 46px;
+    background: #2FBF71;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#about .content2 .btn3 button:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 46px;
+    background-color: #fff;
+    top: 452px;
+    left: 234.5px;
+    z-index: -1;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+#about .content2 .btn3 button:hover {
+    background: #fff;
+    color: #2FBF71;
+    transition: 0.5s;
+}
+
+#about .content2 .btn3 button:hover:before {
+    background: #2FBF71;
+    transition: 0.5s;
+}
+#about hr{
+    position: relative;
+    top: 700px;
+    left: 80px;
+    width: 800px;
+    height: 1px;
+    background: #373741;
+    border: 1px solid #373741;
+}
+
+/* Edu */
+#edu{
+    width: calc(100% - 250px);
+    height: 630px;
+    z-index: 1;
+    margin-left: 250px;
+    margin-top: 30px;
+    position: relative;
+}
+#edu .content3 {
+    position: absolute;
+    top: 40px;
+    left: 16px;
+}
+
+#edu .content3 .head h1 {
+    font-family: 'Poppins';
+    font-weight: 28;
+    font-size: 35px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+#edu .content3 .head:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    border-radius: 2px;
+    top: 78px;
+    background: #2FBF71;
+}
+
+#edu .content3 .head h1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+#edu .content3 .border{
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+#edu .content3 .border span{
+    position: absolute;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 13px;
+    width: 100px;
+    height: 20px;
+    top: 10px;
+    left: -10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #2FBF71;
+}
+#edu .content3 .border span:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 15px;
+    left: 3px;
+    z-index: -2;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-bottom: 20px solid #165934;
+    transform: rotate(55deg);
+}
+#edu .content3 .border .rect{
+    width: 260px;
+    height: 125px;
+    background: #0B0B13;
+    color: #fff;
+}
+#edu .content3 .border .rect h2 {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    top: 40px;
+    left: 30px;
+}
+#edu .content3 .border .rect label {
+    color: #fff;
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 10px;
+    top: 75px;
+    left: 30px;
+}
+#edu .content3 .cont{
+    position: absolute;
+    width: 500px;
+    color: #fff;
+    top: 110px;
+    left: 320px;
+}
+#edu .content3 .cont h3 {
+    font-family: 'Poppins';
+    font-size: 20x;
+}
+#edu .content3 .cont p{
+    font-family: 'Poppins';
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+}
+#edu .content3 .range{
+    position: relative;
+    top: 105px;
+    left: 0px;
+}
+#edu .content3 .range label{
+    font-family: 'Poppins';
+    font-size: 13px;
+}
+#edu .content3 .range input{
+    position: absolute;
+    height: 25px;
+    -webkit-appearance: none;
+    margin-top: 5px;
+    width: 100%;
+    background: none;
+}
+#edu .content3 .range input[type=range]:focus {
+    outline: none;
+}
+#edu .content3 .range input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2FBF71;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+#edu .content3 .range input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+    background: #2FBF71;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+#edu hr {
+    position: relative;
+    top: 580px;
+    left: 55px;
+    width: 800px;
+    height: 2px;
+    background: #373741;
+    border: 1px solid #373741;
+ }
+
+ /* Experiance */
+ #exp{
+    width: calc(100% - 250px);
+    height: 700px;
+    z-index: 1;
+    margin-left: 250px;
+    position: relative;
+}
+#exp .content4 {
+    position: absolute;
+    top: -50px;
+    left: 16px;
+}
+#exp .content4 .head h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: 30px;
+ }
+#exp  .content4 .head:before {
+     content: "";
+     position: absolute;
+     width: 90px;
+     height: 2.5px;
+     border-radius: 2px;
+     top: 78px;
+     background: #2FBF71;
+ }
+#exp .content4 .head h1:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+#exp .content4 .border {
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+#exp .content4 .border span {
+    position: absolute;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 13px;
+    width: 90px;
+    height: 22px;
+    padding: 3px;
+    top: 30px;
+    left: 780px;
+    text-align: center;
+    background: #2FBF71;
+}
+#exp .content4 .border .rect {
+    width: 880px;
+    height: 200px;
+    background: #0B0B13;
+    color: #fff;
+    border-bottom: 1px solid #373741;
+}
+#exp .content4 .border .frame{
+    position: absolute;
+    background: #fff;
+    width: 130px;
+    height: 120px;
+    top: 20px;
+    left: 40px;
+}
+#exp .content4 .border .frame h1{
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 25px;
+    padding: 10px;
+}
+#exp .content4 .border .rect h2 {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    top: 20px;
+    left: 220px;
+}
+#exp .content4 .border .rect label {
+    color: #fff;
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 20;
+    top: 46px;
+    left: 220px;
+}
+#exp .content4 .border .rect p {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 20;
+    top: 80px;
+    left: 220px;
+}
+
+/* Service */
+#service{
+    width: calc(100% - 250px);
+    height: auto;
+    z-index: 1;
+    padding: 80px 0;
+    margin-left: 250px;
+    position: relative;
+}
+#service .content5 {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+#service .content5 .head h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: 30px;
+ }
+#service .content5 .head:before {
+     content: "";
+     position: absolute;
+     width: 90px;
+     height: 2.5px;
+     border-radius: 2px;
+     top: 78px;
+     background: #2FBF71;
+ }
+#service .content5 .head h1:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+
+#service .content5 .border {
+    position: relative;
+    top: 60px;
+    left: -40px;
+}
+#service .content5 .border .rect {
+    width: 400px;
+    height: 170px;
+    background: #0B0B13;
+    color: #fff;
+}
+#service .content5 .border .rect:hover {
+    background: #2FBF71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#service .content5 .border .frame i {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px; top: 20px;
+    left: 16px;
+}
+
+#service .content5 .border .rect h2 {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    top: 30px;
+    left: 90px;
+}
+
+
+#service .content5 .border .rect p {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 20;
+    top: 80px;
+    left: 90px;
+}
+#service .content5 .border {
+    position: relative;
+    top: 60px;
+    left: -5px;
+}
+#service .content5 .border .rect {
+    width: 430px;
+    height: 170px;
+    background: #0B0B13;
+    color: #fff;
+}
+#service .content5 .border .rect:hover {
+    background: #2FBF71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#service .content5 .border .frame i {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px; top: 20px;
+    left: 16px;
+}
+
+#service .content5 .border .rect h2 {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    top: 30px;
+    left: 90px;
+}
+
+
+#service .content5 .border .rect p {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 20;
+    top: 80px;
+    left: 90px;
+}
+
+#service .content5 .border2 {
+    position: relative;
+    top: -298px;
+    left: 450px;
+}
+
+#service .content5 .border2 .rect {
+    width: 430px;
+    height: 170px;
+    background: #0B0B13;
+    color: #fff;
+}
+
+#service .content5 .border2 .rect:hover {
+    background: #2FBF71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#service .content5 .border2 .frame i {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    top: 20px;
+    left: 16px;
+}
+
+#service .content5 .border2 .rect h2 {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    top: 30px;
+    left: 90px;
+}
+
+
+#service .content5 .border2 .rect p {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 20;
+    top: 80px;
+    left: 90px;
+}
+#service hr {
+    position: relative;
+    top: 500px;
+    left: 55px;
+    width: 800px;
+    height: 2px;
+    background: #373741;
+    border: 1px solid #373741;
+}
+
+/* testimonials */
+#test {
+    width: calc(100% - 250px);
+    height: 200px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 390px;
+    margin-left: 10px;
+    position: relative;
+}
+
+#test .content6 {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+}
+
+#test .content6 .head h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+#test .content6 .head:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    border-radius: 2px;
+    top: 78px;
+    background: #2FBF71;
+}
+
+#test .content6 .head h1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+
+
+#test .content6 .border {
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+#test .content6 .border .rect {
+    width: 400px;
+    height: 180px;
+    background: #0B0B13;
+    color: #fff;
+}
+
+#test .content6 .border .frame img {
+    position: absolute;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+}
+
+#test .content6 .border .rect .place {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 20;
+    top: 20px;
+    left: 120px;
+}
+#test .content6 .border .rect .title {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 200;
+    top: 130px;
+    left: 120px;
+}
+
+#test .content6 .border .rect .jobt {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 10px;
+    font-weight: 15;
+    top: 150px;
+    left: 120px;
+}
+
+#test .content6 .border2 {
+    position: absolute;
+    top: 115px;
+    left: 450px;
+}
+
+#test .content6 .border2 .rect {
+    width: 400px;
+    height: 180px;
+    background: #0B0B13;
+    color: #fff;
+}
+
+#test .content6 .border2 .frame img {
+    position: absolute;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+}
+
+#test .content6 .border2 .rect .place {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 20;
+    top: 20px;
+    left: 120px;
+}
+
+#test .content6 .border2 .rect .title {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 200;
+    top: 130px;
+    left: 120px;
+}
+
+#test .content6 .border2 .rect .jobt {
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 10px;
+    font-weight: 15;
+    top: 150px;
+    left: 120px;
+}
+
+#text .content6 .border-nav{
+    position: absolute;
+        top: 110px;
+        left: 450px;
+    display: inline-block;
+    z-index: 1;
+}
+#text .content6 .border-nav .border-btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #2FBF71;
+}
+
+
+
+/* My Portfolio */
+#portfolio {
+    width: calc(100% - 250px);
+    height: 700px;
+    z-index: 1;
+    padding: 20px 0;
+    margin-top: 150px;
+    margin-left: 250px;
+    position: relative;
+}
+
+#portfolio .content7 {
+    position: absolute;
+    top: 190px;
+    left: 16px;
+}
+
+#portfolio .content7 .head h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: -180px;
+}
+
+#portfolio .content7 .head:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    border-radius: 2px;
+    top: -130px;
+    background: #2FBF71;
+}
+
+#portfolio .content7 .head h1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+#portfolio .bar{
+    position: absolute;
+    top: -110px;
+}
+#portfolio .bar .all::before{
+    content: "";
+    width: 18px;
+    height: 1.8px;
+    background: #2FBF71;
+    position: absolute;
+    top: 25px;
+}
+#portfolio .bar li{
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 240;
+    cursor: pointer;
+}
+#portfolio .row {
+    margin-top: -120px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#portfolio .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#portfolio .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Blog */
+#blog {
+    width: calc(100% - 250px);
+    height: 420px;
+    z-index: 1;
+    padding: 20px 0;
+    margin-top: 150px;
+    margin-left: 250px;
+    position: relative;
+}
+
+#blog .content8 {
+    position: absolute;
+    top: 190px;
+    left: 16px;
+}
+
+#blog .content8 .head h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: -180px;
+}
+
+#blog .content8 .head:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    border-radius: 2px;
+    top: -130px;
+    background: #2FBF71;
+}
+
+#blog .content8 .head h1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+#blog .content8 .border{
+    position: relative;
+    top: -140px;
+    cursor: pointer;
+}
+#blog .content8 .border:hover,
+#blog .content8 .border img:hover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1.5s;
+    /* transform: scale(1.5); */
+}
+#blog .content8 .border img{
+    position: absolute;
+    width: 400px;
+    height: 240px;
+    vertical-align: middle;
+}
+
+#blog .content8 .border .rect{
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    background: #0B0B13;
+    color: #fff;
+    top: 160px;
+    left: 100px;
+    z-index: 10;
+}
+#blog .content8 .border .rect span{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 40;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#blog .content8 .border .rect p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+#blog .content8 .border .rect p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#blog .content8 .border2 {
+    position: relative;
+    top: -140px;
+    left: 480px;
+    cursor: pointer;
+}
+#blog .content8 .border2:hover,
+#blog .content8 .border2 img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1.5s;
+    /* transform: scale(1.5); */
+}
+
+#blog .content8 .border2 img {
+    position: absolute;
+    width: 400px;
+    height: 240px;
+    vertical-align: middle;
+}
+
+#blog .content8 .border2 .rect {
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    background: #0B0B13;
+    color: #fff;
+    top: 160px;
+    left: 100px;
+    z-index: 10;
+}
+
+#blog .content8 .border2 .rect span {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 40;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#blog .content8 .border2 .rect p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+#blog .content8 .border2 .rect p a {
+    text-decoration: none;
+    color: #fff;
+}
+#blog .content8 .btn {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 350px;
+    cursor: pointer;
+}
+
+#blog .content8 .btn button {
+    width: 140px;
+    height: 46px;
+    background: #2FBF71;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#blog .content8 .btn button:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 46px;
+    background-color: #fff;
+    margin-top: -8px;
+    margin-left: -24px;
+    z-index: -1;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+#blog .content8 .btn button:hover {
+    background: #fff;
+    color: #2FBF71;
+    transition: 0.5s;
+}
+#blog .content8 .btn button:hover:before {
+    background: #2FBF71;
+    transition: 0.5s;
+}
+
+/* contact */
+#contact {
+    width: calc(100% - 250px);
+    height: 800px;
+    z-index: 1;
+    padding: 20px 0;
+    margin-top: 150px;
+    margin-left: 250px;
+    position: relative;
+}
+
+#contact .content9 {
+    position: absolute;
+    top: 190px;
+    left: 16px;
+}
+
+#contact .content9 .head h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 28;
+    color: #fff;
+    position: relative;
+    top: -180px;
+}
+
+#contact .content9 .head:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    border-radius: 2px;
+    top: -130px;
+    background: #2FBF71;
+}
+
+#contact .content9 .head h1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 44px;
+    left: 88px;
+    background: #2FBF71;
+}
+#contact .content9 .border1{
+    position: relative;
+    width: 250px;
+    height: 390px;
+    background: #0B0B13;
+    color: #fff;
+    margin-top: -150px;
+}
+#contact .content9 .border1 span{
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 20px;
+}
+#contact .content9 .border1 p{
+    font-family: 'Roboto';
+    font-size:15px;
+    font-weight: 30;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+#contact .content9 .border1 .list{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 220px;
+    left: 20px;
+}
+#contact .content9 .border1 .list li label{
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+#contact .content9 .border2{
+    position: absolute;
+    top: -100px;
+    left: 300px;
+}
+#contact .content9 .border2 .rect{
+    width: 500px;
+    height: 350px;
+    background: #0B0B13;
+    color: #fff;
+}
+#contact .content9 .border2 .rect h2{
+    font-family: 'Poppins';
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+#contact .content9 .border2 .rect form{
+    position: relative;
+    top: 13px;
+    left: 30px;
+}
+#contact .content9 .border2 .rect form .name,
+#contact .content9 .border2 .rect form .email{
+    width: 220px;
+    height: 40px;
+    background: none;
+    border: 1px solid #373741;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+}
+
+#contact .content9 .border2 .rect form .subject {
+    width: 445px;
+    height: 40px;
+    background: none;
+    border: 1px solid #373741;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+}
+#contact .content9 .border2 .rect form .message {
+    width: 445px;
+    height: 100px;
+    background: none;
+    border: 1px solid #373741;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 100px;
+}
+
+#contact .content9 .map {
+    margin-top: 30px;
+    -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+}
+#contact .content9 .btn {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#contact .content9 .btn button {
+    width: 140px;
+    height: 46px;
+    background: #2FBF71;
+    font-family: 'Poppins';
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact .content9 .btn button:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 46px;
+    background-color: #fff;
+    margin-top: -8px;
+    margin-left: -10px;
+    z-index: -1;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+#contact .content9 .btn button:hover {
+    background: #fff;
+    color: #2FBF71;
+    transition: 0.5s;
+}
+
+#contact .content9 .btn button:hover:before {
+    background: #2FBF71;
+    transition: 0.5s;
+}
